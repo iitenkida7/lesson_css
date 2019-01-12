@@ -114,6 +114,10 @@ figure.hero img {
 
 section {
     grid-row: recent;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px 10px;
+    gap: 20px 10px;
 }
 
 footer {
