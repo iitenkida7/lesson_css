@@ -120,6 +120,20 @@ section {
     gap: 20px 10px;
 }
 
+section a {
+    text-decoration: none;
+    color: #000000;
+}
+
+section a:hover {
+    text-decoration: underline;
+
+}
+
+section h2 {
+    font-size: 14px;
+}
+
 footer {
     grid-row: foot;
 }
