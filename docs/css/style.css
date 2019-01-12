@@ -14,7 +14,7 @@ body {
         [title] auto
         [sub] auto
         [recent] auto
-        [foot] 100px;
+        [foot] 80px;
     grid-row-gap: 20px;
     row-gap: 20px;
     font-family:  "M PLUS 1p",sans-serif;
@@ -31,6 +31,7 @@ header {
     font-size: 40px;
     color: white;
     text-shadow: 0 0 5px #444444;
+    font-family: 'Bowlby One SC', sans-serif;
 }
 
 nav {
@@ -59,17 +60,15 @@ nav a:hover {
     color: #ef9504;
 }
 
-
 h1 {
     grid-row: title;
     justify-self: start;
-    align-self: center;
-    /*text-align: center;*/
     color: #ffffff;
     font-size: 50px;
     font-weight: normal;
     line-height: 1.2;
-    text-shadow: 0 0 1px yellow;
+    text-shadow: 0 0 1px #444444;
+    font-family: 'Bowlby One SC', sans-serif;
 }
 
 p {
