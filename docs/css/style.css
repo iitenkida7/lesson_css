@@ -128,6 +128,13 @@ section a:hover {
 }
 
 section h2 {
+    font-size: 20px;
+    letter-spacing: 10px;
+    text-align: center;
+    grid-column:  1 / -1;
+}
+
+section h3 {
     font-size: 14px;
 }
 
@@ -144,5 +151,5 @@ body::after {
     content: "";
     z-index: -1;
     grid-column:  1 / -1;
-    background-color: #eeeeee;
+    background-color: #f7eaea;
 }
