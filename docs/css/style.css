@@ -14,7 +14,7 @@ body {
         [title] auto
         [sub] auto
         [recent] auto
-        [foot] 80px;
+        [foot] 50px;
     grid-row-gap: 20px;
     row-gap: 20px;
     font-family:  "M PLUS 1p",sans-serif;
@@ -151,5 +151,55 @@ body::after {
     content: "";
     z-index: -1;
     grid-column:  1 / -1;
-    background-color: #f7eaea;
+    background-color: #666666;
+}
+
+/* ======= PC設定 ======= */
+@media (min-width: 768px) {
+body {
+    grid-template-columns: 0.2fr repeat(6,1fr) 0.2fr;
+    grid-column-gap: 5%;
+    column-gap: 5%;
+    grid-template-rows: 
+        [head] 100px
+        [title sub] auto
+        [recent] auto
+        [foot] 50px;
+}
+
+figure.hero{
+    grid-row: title;
+    margin-top: -20px;
+}
+
+h1 {
+   grid-column: 2 / span 3;
+   font-size: 80px; 
+   margin-top: 60px;
+}
+
+p.subtitle { 
+    grid-column: 2 / span 2;
+    /*margin-top: 150px;*/
+    margin-top:0px;
+    align-self: end;
+    margin-bottom: 40px;
+    justify-self: center;
+}
+
+section {
+    margin-top: 90px;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 20px 20px;
+    gap: 20px 20px;
+}
+
+header {
+    justify-self: start;
+}
+
+nav {
+    justify-self: end;
+    align-self: center;
+}
 }
