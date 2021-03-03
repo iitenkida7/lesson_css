@@ -60,7 +60,7 @@ nav a:hover {
     color: #ef9504;
 }
 
-h1 {
+.top h1 {
     grid-row: title;
     justify-self: start;
     color: #ffffff;
@@ -71,16 +71,16 @@ h1 {
     font-family: 'Bowlby One SC', sans-serif;
 }
 
-p {
+.top p {
     grid-row: sub;
 }
 
-img {
+.top img {
     width: 100%;
     height: auto;
 }
 
-p.subtitle a {
+.top p.subtitle a {
     margin-top: 80px;
     color: #ffffff;
     text-decoration: none;
@@ -91,7 +91,7 @@ p.subtitle a {
     display: inline-block;
 }
 
-p.subtitle a:hover {
+.top p.subtitle a:hover {
     background-color: #ef9504;
 }
 
@@ -100,7 +100,7 @@ figure.hero {
     grid-row: title / span 2;
 }
 
-figure.hero img {
+.top figure.hero img {
     height: 400px;
     object-fit: cover;
     vertical-align: bottom;
@@ -109,7 +109,7 @@ figure.hero img {
     position: relative; /*edge用らしい */
 }
 
-section {
+.top section {
     grid-row: recent;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -117,24 +117,24 @@ section {
     gap: 20px 10px;
 }
 
-section a {
+.top section a {
     text-decoration: none;
     color: #000000;
 }
 
-section a:hover {
+.top section a:hover {
     text-decoration: underline;
 
 }
 
-section h2 {
+.top section h2 {
     font-size: 20px;
     letter-spacing: 10px;
     text-align: center;
     grid-column:  1 / -1;
 }
 
-section h3 {
+.top section h3 {
     font-size: 14px;
 }
 
@@ -152,6 +152,45 @@ body::after {
     z-index: -1;
     grid-column:  1 / -1;
     background-color: #666666;
+}
+
+.post {
+    grid-template-rows: 
+        [head] 100px
+        [post] auto
+        [submenu] auto
+        [foot] 50px;
+}
+
+.post article {
+    grid-row: post;
+}
+
+.post div {
+    grid-row: submenu;
+}
+
+.post article > * {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    display: block;
+}
+
+.post article p {
+    line-height: 2;
+}
+
+.post::before {
+    content: "";
+    background: #eeeeee;
+    height: 2px;
+    grid-column: 1 / -1;
+    grid-row: post;
+}
+
+.fa-clock {
+    color: #888888;
+    margin-right: 5px;
 }
 
 /* ======= PC設定 ======= */
